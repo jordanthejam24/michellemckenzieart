@@ -1,0 +1,21 @@
+.home {
+    height: 95vh;
+    background-color: #fbfbfb;
+
+
+    &__title {
+        text-decoration: none;
+        color: black;
+        font-weight: 200;
+    }
+
+    &__strong {
+        font-size: 50px;
+    }
+    &__small {
+        font-size: 20px;
+    }
+    &__image {
+        width: 100%;
+    }
+}
