@@ -1,21 +1,55 @@
 .home {
-    height: 95vh;
+    height: 90vh;
+    width: 100%;
     background-color: #fbfbfb;
+    
+    &__line {
+        width: 85%;
+        content: "";
+        display: block;
+        margin: 0 auto;
+        border-bottom: 1px solid #aaaaaa;
+        padding: 2rem 0;
+    }
 
+    &__nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        
+    }
 
     &__title {
+        padding-right: 10rem;
+        // flex: 1 0 0;
+    }
+    &__links {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    &__link,
+    &__link>h4{
         text-decoration: none;
         color: black;
-        font-weight: 200;
+        font-weight: 100;
+        font-size: 1.5rem;
+        flex: .25 0 0;
+        padding: 0 1rem 3px 0;
     }
 
     &__strong {
         font-size: 50px;
     }
     &__small {
-        font-size: 20px;
+        font-size: 30px;
     }
     &__image {
         width: 100%;
+        padding: 2rem 2.5rem 0 2.5rem;
     }
 }
+
+// .home__nav:not(:first-child) {
+//     justify-items: flex-end;
+// }
