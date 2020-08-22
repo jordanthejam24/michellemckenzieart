@@ -6,13 +6,14 @@ function Header() {
     return (
         <div id="navbar">
             <div className="header">
-                <a href="#navtop" className="logo">
+            {/* Decided to use a tag to refresh at the top of the home */}
+                <a href="/" className="logo">
                     <strong className="logo__strong">M</strong>
                     <small className="logo__small">M</small>
                 </a>
                 <div className="header__links">
                     <Link to="/about" className="header__link">
-                        <h4>About</h4>
+                        <h4 className="btn-black">About</h4>
                     </Link>
                     <Link to="/gallery" className="header__link">
                         <h4>Gallery</h4>
