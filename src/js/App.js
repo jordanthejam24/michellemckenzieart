@@ -7,16 +7,15 @@ import About from './About';
 import Contact from './Contact';
 import Header from './Header';
 import Footer from './Footer';
+import { useStateValue } from './StateProvider';
 
 function App() {
+  const [{}, dispatch] = useStateValue();
   return (
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/">
-            <Home />
-          {/* header and footer and homepage maybe */}
-          </Route>
+          
           <Route path="/gallery">
             <Header />
             <Gallery />
@@ -31,6 +30,10 @@ function App() {
             <Header />
             <Contact />
             <Footer />
+          </Route>
+          <Route path="/">
+            <Home />
+          {/* header and footer and homepage maybe */}
           </Route>
         </Switch>
       </div>

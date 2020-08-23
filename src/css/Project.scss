@@ -1,0 +1,10 @@
+.project {
+    width: 50rem;
+    border: 1px solid pink;
+    display: flex;
+    align-items: center;
+
+    &__image {
+        width: 100%;
+    }
+}

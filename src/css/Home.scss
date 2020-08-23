@@ -1,8 +1,9 @@
 .home {
-    height: 90vh;
+    // height: 90vh;
     width: 100%;
     background-color: #fbfbfb;
     margin-top: 10rem;
+    
     
     &__line {
         width: 85%;
@@ -19,20 +20,29 @@
         align-items: flex-end;
         
     }
-
+    &__landing {
+        position: relative;
+    }
     &__title {
-        padding-right: 10rem;
-        // flex: 1 0 0;
+        text-decoration: none;
+        color: black;
+        font-weight: 100;
+        position: absolute;
+        top: 45%;
+        left: 45%;
+
+        &--strong {
+            font-size: 8rem;
+        }
+        &--small {
+            font-size: 4rem;
+        }
     }
-    &__links {
-        display: flex;
-        flex-direction: row;
-        
-    }
+
     
     &__image {
         width: 100%;
-        padding: 2rem 2.5rem 0 2.5rem;
+        padding: 0 2.5rem 0 2.5rem;
     }
 }
 

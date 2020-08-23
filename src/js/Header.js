@@ -13,13 +13,13 @@ function Header() {
                 </a>
                 <div className="header__links">
                     <Link to="/about" className="header__link">
-                        <h4 className="btn-black">About</h4>
+                        <h4 className="btn-main">About</h4>
                     </Link>
                     <Link to="/gallery" className="header__link">
-                        <h4>Gallery</h4>
+                        <h4 className="btn-main">Gallery</h4>
                     </Link>
                     <Link to="/contact" className="header__link">
-                        <h4>Contact</h4>
+                        <h4 className="btn-main">Contact</h4>
                     </Link>
                 </div>
             </div>

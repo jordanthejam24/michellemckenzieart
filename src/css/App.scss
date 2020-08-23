@@ -45,16 +45,20 @@
   }
 }
 ///////////////Universal Styles///////////////////////
+html {
+  background-color: #fbfbfb;
+  font-size: 62.5%;
+}
 
 .logo {
   text-decoration: none;
   color: black;  
 
   &__strong {
-    font-size: 4rem;
+    font-size: 7rem;
   }
   &__small {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
 
@@ -65,7 +69,7 @@
     text-decoration: none;
     color: black;
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 6rem;
     flex: .25 0 0;
     padding: 0 1rem 0 0;
   }
@@ -73,10 +77,69 @@
 
 /////////buttons////////////////
 .btn {
-  color: black;
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: .5rem 1rem;
+    position: relative;
+    backface-visibility: hidden;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 300;
+    border: 1px solid black;
+    transition: all .5s ease;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to top, black 50%, transparent 50%);
+  }
+}
+.btn:hover {
+  background-position: 0 100%;
+  color: #ffffff;
+}
+.btn-main {
+  display: inline-block;
+  position: relative;
   text-decoration: none;
+  color: black;
   font-size: 3rem;
-  font-weight: 300;
-  padding: 0 1rem;
-  border: 1px solid black;
+}
+//for cool underliny effect
+.btn-main::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  height: 1px;
+  background: #000000;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-main:hover::before {
+  transform-origin: left center;
+  transform: scale(1, 1);
+}
+
+/////////margins///////////////
+.mgn-vert-small {
+  margin: 1rem auto !important;
+}
+.mgn-vert-med {
+  margin: 2rem auto !important;
+}
+.mgn-vert-lg {
+  margin: 4rem auto !important;
 }
