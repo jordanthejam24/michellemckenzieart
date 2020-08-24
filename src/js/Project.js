@@ -1,17 +1,19 @@
 import React from 'react';
 import '../css/Project.scss';
 import {Link} from 'react-router-dom';
-import { useStateValue } from './StateProvider';
 
-function Project(id, title, paintingImage, photoImage, desc) {
-    const [{}, dispatch] = useStateValue();
+function Project({id, title, paintingImage, photoImage, desc}) {
 
     return (
         <div className="project">
             <div className="project__image">
-                <img src={ require("../img/naomi-flowers.jpg")} alt="image" className="project__image"/>
+                <img src={paintingImage} alt="image" className="project__image"/>
             </div>
-            <Link to='/gallery' className="btn">More Info</Link>
+            <div className="project__info">
+                <h2>{title}</h2>
+                <p>{desc}</p>
+                <Link to='/project/:id' className="btn">More Info</Link>
+            </div>
         </div>
     )
 }

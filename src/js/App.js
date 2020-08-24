@@ -7,15 +7,19 @@ import About from './About';
 import Contact from './Contact';
 import Header from './Header';
 import Footer from './Footer';
-import { useStateValue } from './StateProvider';
+import Project from './Project';
 
 function App() {
-  const [{}, dispatch] = useStateValue();
+    
   return (
     <Router>
       <div className="App">
         <Switch>
-          
+          <Route path="/project/:projectId">
+            <Header />
+            <Project />
+            <Footer />
+          </Route>
           <Route path="/gallery">
             <Header />
             <Gallery />

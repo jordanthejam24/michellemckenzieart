@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import Footer from './Footer';
 import Header from './Header';
 import Project from './Project';
-import { useStateValue } from './StateProvider';
 
 function Home() {
+    
     return (
         <div className="home">
             <Header />
@@ -17,14 +17,16 @@ function Home() {
                     <small className="home__title--small">McKenzie</small>
                 </h1>
             </div>
-            <Link to="/gallery" className="btn mgn-vert-lg">See More</Link>
             <span className="home__line mgn-vert-lg"></span>
             <h1 className="heading__primary">Favorites</h1>
+            <div className="Project__area">
             
-            <Project />
+            </div>
             <Footer />
-        </div>
-    )
-}
-
-export default Home
+            </div>
+            )
+        }
+        
+        export default Home
+        
+        // <Link to="/gallery" className="btn mgn-vert-lg">See More</Link>
