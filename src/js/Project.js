@@ -12,7 +12,7 @@ function Project({id, title, paintingImage, photoImage, desc}) {
             <div className="project__info">
                 <h2>{title}</h2>
                 <p>{desc}</p>
-                <Link to='/project/:id' className="btn">More Info</Link>
+                <Link to='/project/:id' className="btn btn-small">More Info</Link>
             </div>
         </div>
     )

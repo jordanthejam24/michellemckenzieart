@@ -1,9 +1,19 @@
+
+///////COLORS//////////////
+$color-primary: #fbfbfb;
+$color-secondary: #aaaaaa;
+
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  background-color: #fbfbfb;
+  font-size: 62.5%;
 }
 
 .App {
@@ -45,10 +55,7 @@
   }
 }
 ///////////////Universal Styles///////////////////////
-html {
-  background-color: #fbfbfb;
-  font-size: 62.5%;
-}
+
 
 .logo {
   text-decoration: none;
@@ -91,6 +98,28 @@ html {
     text-decoration: none;
     font-size: 3rem;
     font-weight: 300;
+    border: 1px solid black;
+    transition: all .5s ease;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to top, black 50%, transparent 50%);
+  }
+}
+.btn-small {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: .2rem .5rem;
+    position: relative;
+    backface-visibility: hidden;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    min-width: 100px;
     border: 1px solid black;
     transition: all .5s ease;
     background-size: 100% 200%;
@@ -142,4 +171,40 @@ html {
 }
 .mgn-vert-lg {
   margin: 4rem auto !important;
+}
+
+
+//////sections / colors / spacing ///////////////////
+// #e0ebe8
+//#45b29a
+//#58d6b9
+//#7dcc93
+//#2b3d51
+//#f76160
+//#374760
+//#31355b
+//#f8c687
+//#708c90
+//#104148
+//#005361
+//#21364b
+//#fae298
+//#37b0e9
+//#e29470
+//#ce672d
+//#69a8d3
+//#a8d7f9
+//#679895
+//#5d8986
+
+.section {
+  width: 100%;
+  height: 75vh;
+  
+  &--1 {
+    background-color: #c1605c;
+  }
+  &--2 {
+    background-color: #1f4954;
+  }
 }

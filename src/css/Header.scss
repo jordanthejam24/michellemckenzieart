@@ -1,5 +1,5 @@
 .header {
-    height: 7erem;
+    height: 7rem;
     width: 100%;
     background-color: rgba(lightgrey, .75);
     display: flex;
@@ -8,7 +8,7 @@
     z-index: 10;
     position: fixed;
     top: 0;
-    
+    padding-bottom: 1rem;
 
     &__links {
         display: flex;

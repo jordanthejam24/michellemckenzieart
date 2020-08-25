@@ -1,10 +1,26 @@
 .project {
-    width: 50rem;
-    border: 1px solid pink;
-    display: flex;
-    align-items: center;
+    width: 90%;
+    // display: flex;
+    margin: 6rem 4rem 4rem 4rem;
+    background-color: #fbfbfb;
+
 
     &__image {
         width: 100%;
+        margin-right: 2rem;
     }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+//////area in home file for projects///////
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }

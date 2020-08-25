@@ -18,10 +18,30 @@ function Home() {
                 </h1>
             </div>
             <span className="home__line mgn-vert-lg"></span>
-            <h1 className="heading__primary">Favorites</h1>
-            <div className="Project__area">
-            
+            <h1 className="heading__primary mgn-vert-lg">Favorites</h1>
+            <div className="section--1">
+                <div className="projects">
+                    <Project 
+                        id={1234}
+                        title="Flowers"
+                        paintingImage={require("../img/naomi-flowers.jpg")}
+                        photoImage={require("../img/naomi-flowers-picture.jpg")}
+                        desc="test"
+                    />
+                </div>
             </div>
+            <div className="section--2">
+                <div className="projects">
+                    <Project 
+                        id={1234}
+                        title="Flowers"
+                        paintingImage={require("../img/hands.jpg")}
+                        photoImage={require("../img/hands.jpg")}
+                        desc="test"
+                    />
+                </div>
+            </div>
+                    
             <Footer />
             </div>
             )
