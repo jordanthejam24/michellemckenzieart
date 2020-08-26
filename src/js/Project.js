@@ -10,9 +10,10 @@ function Project({id, title, paintingImage, photoImage, desc}) {
                 <img src={paintingImage} alt="image" className="project__image"/>
             </div>
             <div className="project__info">
-                <h2>{title}</h2>
-                <p>{desc}</p>
-                <Link to='/project/:id' className="btn btn-small">More Info</Link>
+                <h1 className="project__title">{title}</h1>
+                <span className="line__small"></span>
+                <h3 className="project__desc">{desc}</h3>
+                <Link to='/project/:id' className="btn btn-small">View Project</Link>
             </div>
         </div>
     )
