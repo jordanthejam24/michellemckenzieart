@@ -1,0 +1,27 @@
+.piece {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+
+    &__box {
+        
+    }
+    
+    &__painting {
+        position: relative;
+        
+    }
+
+    &__image {
+        max-width: 40rem;
+    }
+    &__overlay {
+        // display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

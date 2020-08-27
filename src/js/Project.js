@@ -3,7 +3,7 @@ import '../css/Project.scss';
 import {Link} from 'react-router-dom';
 
 function Project({id, title, paintingImage, photoImage, desc}) {
-
+    
     return (
         <div className="project">
             <div className="project__image">

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Footer from './Footer';
 import Header from './Header';
 import Project from './Project';
+import {Parallax, Background } from 'react-parallax';
 
 function Home() {
     
@@ -19,7 +20,7 @@ function Home() {
             </div>
             <span className="line__lg mgn-vert-lg"></span>
             <h1 className="heading__primary mgn-vert-lg">Favorite Projects</h1>
-            <div className="section--1">
+            <div className="section--projects">
                 <div className="projects">
                     <Project 
                         id={1234}
@@ -48,20 +49,36 @@ function Home() {
                     />
                 </div>
             </div>
-            <div className="section--2">
-                <p className="line__lg"></p>
-                <p className="line__lg"></p>
-                <p className="line__lg"></p>
-                <p className="line__lg"></p>
-                <p className="line__lg"></p>
-                <p className="line__lg"></p>
-                <p className="line__lg"></p>
+            <div className="section--about">
+                <div className="about__home">
+                    <h1 className="heading__primary mgn-vert-lg">Who am I?</h1>
+                    <span className="line__med mgn-vert-lg"></span> 
+                    <h3 className="about__desc">
+                        Life-long artist, mother, creator. I've worked with schools, programs, and on my own to create beautiful pieces to speak to your heart.
+                    </h3>
+                </div>
+            </div>
+            <div className="section--quote">
+                <div className="quote">
+                    <Parallax
+                        blur={1}
+                        bgImage={require('../img/parallax-2.jpg')}
+                        bgImageAlt="Image"
+                        strength={200}
+                    >
+                        <div className="parallax__h-lg" />
+                    </Parallax>
+                    <h1 className="heading__secondary parallax__title">
+                        Beauty is in the eye of the beholder
+                    </h1>
+                </div>
+
             </div>
             <Footer />
-            </div>
-            )
-        }
-        
-        export default Home
-        
-        // <Link to="/gallery" className="btn mgn-vert-lg">See More</Link>
+        </div>
+        )
+    }
+
+export default Home
+
+// <Link to="/gallery" className="btn mgn-vert-lg">See More</Link>
