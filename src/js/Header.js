@@ -12,6 +12,9 @@ function Header() {
                     <small className="logo__small">M</small>
                 </a>
                 <div className="header__links">
+                    <a href="/" className="header__link">
+                        <h4 className="btn-main">Home</h4>
+                    </a>
                     <Link to="/about" className="header__link">
                         <h4 className="btn-main">About</h4>
                     </Link>

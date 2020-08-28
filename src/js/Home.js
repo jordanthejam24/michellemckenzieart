@@ -58,13 +58,24 @@ function Home() {
                     </h3>
                 </div>
             </div>
+            <div className="section--design">
+                <div className="design">
+                    <h1 className="heading__primary">Hear from others</h1>
+                    <span className="line__lg mgn-vert-small"></span>
+                    <div className="design__info">
+                        <p className="design__text heading__primary-small">
+                            "I really wanted to get something special for my wife for our anniversairy. I wanted something to capture more than what a photo could. Michelle's piece did just that."
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div className="section--quote">
                 <div className="quote">
                     <Parallax
                         blur={1}
                         bgImage={require('../img/parallax-2.jpg')}
                         bgImageAlt="Image"
-                        strength={200}
+                        strength={400}
                     >
                         <div className="parallax__h-lg" />
                     </Parallax>
@@ -72,7 +83,9 @@ function Home() {
                         Beauty is in the eye of the beholder
                     </h1>
                 </div>
-
+            </div>
+            <div className="section--contact">
+            <span className="line__med mgn-vert-lg"></span> <span className="line__med mgn-vert-lg"></span> <span className="line__med mgn-vert-lg"></span> <span className="line__med mgn-vert-lg"></span> 
             </div>
             <Footer />
         </div>
