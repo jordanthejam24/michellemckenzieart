@@ -66,6 +66,9 @@ function Home() {
                         <p className="design__text heading__primary-small">
                             "I really wanted to get something special for my wife for our anniversairy. I wanted something to capture more than what a photo could. Michelle's piece did just that."
                         </p>
+                        <p className="design__text heading__primary-small">
+                        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, repudiandae reprehenderit nesciunt ducimus in provident fuga minima excepturi velit incidunt eaque aperiam ipsam! Saepe mollitia laudantium dolor numquam maxime doloribus?"
+                        </p>
                     </div>
                 </div>
             </div>
@@ -85,8 +88,12 @@ function Home() {
                 </div>
             </div>
             <div className="section--contact">
-            <span className="line__med mgn-vert-lg"></span> <span className="line__med mgn-vert-lg"></span> <span className="line__med mgn-vert-lg"></span> <span className="line__med mgn-vert-lg"></span> 
-            </div>
+                <h1 className="heading__tertiary mgn-vert-med">How can I help?</h1>
+                <p className="heading__tertiary-small">Send me your ideas! I'll turn your photos into real paintings.</p>
+                <Link to="/contact" className="contact__link">
+                    <button className="btn btn-main mgn-vert-lg">Contact me</button>
+                </Link>
+                </div>
             <Footer />
         </div>
         )

@@ -111,6 +111,12 @@ html {
     font-size: 5rem;
     flex: .25 0 0;
     padding: 0 1rem 0 0;
+
+    &-small {
+      color: #957b5f;
+      font-weight: 400;
+      font-size: 3rem;
+    }
   }
 }
 /////////videos/////////////////
@@ -278,7 +284,8 @@ html {
 
   }
   &__text {
-    margin: 3rem 0;
+    margin: 3rem 1rem;
+    padding: 2rem;
   }
 }
 
