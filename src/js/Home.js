@@ -65,9 +65,11 @@ function Home() {
                     <div className="design__info">
                         <p className="design__text heading__primary-small">
                             "I really wanted to get something special for my wife for our anniversairy. I wanted something to capture more than what a photo could. Michelle's piece did just that."
+                            <span className="span__light"><br />-Someone Important</span>
                         </p>
                         <p className="design__text heading__primary-small">
                         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, repudiandae reprehenderit nesciunt ducimus in provident fuga minima excepturi velit incidunt eaque aperiam ipsam! Saepe mollitia laudantium dolor numquam maxime doloribus?"
+                            <span className="span__light"><br />-Another Important</span>
                         </p>
                     </div>
                 </div>
